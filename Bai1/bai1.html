@@ -4,39 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
 </head>
 <body>
     <h1> New Product</h1>
     <hr>
-        <form  name="frm">
-         <p>
-            <label> 
-                 Product Name
-                 <input id="pname" name="pname" >
-             </label>
-        
-            <label>
-                Quantity
-                 <input id="qty" type="text" name="qty">
-            </label>
-        </p>
-            <br>
-         <p>
-            <label>unit Price
-                <input id="up" name="up" type="text">
-            </label>
-        
-            <label>
-                Discount
-                <input id="dc" name="dc" type="text">
-            </label>
-        </p>
-                <button type="button" onclick="sell()">Sell</button>
-                <button type="button"> Cancel</button>
-            </p>
-
-        </form>
-        <table id="tbl">
+    <form name="frm" >
+        <label>  Product Name:</label><br>
+        <input type="text" id="pname" name="pname" ><br>
+        <label >Quantity:</label><br>
+        <input type="text" id="qty" name="qty" ><br>
+        <label>  Unit Price:</label><br>
+        <input type="text" id="up" name="up" ><br>
+        <label>Discount:</label><br>
+        <input type="text" id="dc" name="dc" ><br>
+        <br>
+        <input type="button" onclick="sell()" value="Submit"><br><br>
+      </form> 
+        <table id="tbl" style="width:100%">
             <tr>
                 <th>ID</th>
                 <th>Product Name</th>
